@@ -1,0 +1,103 @@
+html{
+    height: 100%;
+
+}
+body{
+    background: #2f3035;
+    background-image: url(./images//beech.jpeg);
+    background-position: center;
+    background-size: cover;
+            background-attachment: scroll;
+        background-repeat: no-repeat;
+
+}
+
+.container{
+    margin: 0 auto;
+    width: 1024px;
+}
+header{
+    height: 118px;
+    text-align: center;
+}
+nav{
+    background: rgba(0, 0,0,0.4);
+    height: 40px;
+    text-align: left;
+    padding-top: 16px;
+    font: size 200px;;
+
+}
+main{
+    height: 400px;
+    text-align: center;
+    padding: 80px 240px 0 240px;
+}
+/* footer{
+    background: rgb(41, 29, 29);
+    height: 80px;
+    text-align: center;
+    padding-top: 40px;
+    } */
+    h1{
+        font-size: 84px;
+        font-family:Arial, Helvetica, sans-serif;
+    color: #ff0101;
+    margin-bottom: 20px;
+    }
+    p{
+        font-size: 18px;
+        color: #fff;
+    }
+    a{
+        color: #f9f4f4f8;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: large;
+    }
+    nav a{
+        text-decoration: none;
+        font-size: 25px;
+        font: weight 550px;
+            padding: 0 16px; 
+    }
+    .maps{
+        padding: 100px;
+        
+        margin-top: 700px;
+        
+    }
+         
+.gallery {
+    margin-top: 450px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:left;
+    gap: 10px;
+    padding: 20px;
+    text-align: center;
+    
+} 
+.gallery-heading{
+    width: 100%;
+    margin-top:-55px;
+    margin-bottom: 25px;
+}
+.gallery-heading a {
+    text-decoration: none;
+    color: rgb(174, 255, 0); 
+    font-size: 44px;
+}
+.gallery img {
+    width: 300px;
+height: 200px; 
+    border-radius: 10px;
+    transition: transform 0.2s;
+
+}
+.gallery-heading a:hover {
+    color: rgb(139, 0, 0);
+}
+
+.gallery img:hover {
+   transform: scale(1.2);
+}
