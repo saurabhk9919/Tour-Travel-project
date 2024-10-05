@@ -2,26 +2,41 @@ html{
     height: 100%;
 
 }
-body{
-    background: #2f3035;
-    background-image: url(./images//beech.jpeg);
-    background-position: center;
-    background-size: cover;
-            background-attachment: scroll;
-        background-repeat: no-repeat;
-
+body {
+    background: #000000; /* Fallback color */
+    background-image: url(./images/beech.jpeg); /* Background image */
+    background-position: center; /* Center the image */
+    background-size: cover; /* Cover the entire body */
+    background-attachment: scroll; /* Image scrolls with content */
+    background-repeat: no-repeat; /* Prevent image repetition */
+    height: 100vh; /* Full height */
+    margin: 0; /* Remove default margin */
+    position: relative; /* Make body a positioning context */
 }
 
 .container{
     margin: 0 auto;
     width: 1024px;
 }
+
+.overlay {
+    position: absolute;
+    top: 55px; 
+    left: 0;
+    right: 0;
+    height: 100vh; /* Cover the viewport height */
+    background-color: rgba(0, 0, 0, 0.5); 
+    text-align: center;
+    padding-top: 130px; 
+    color: white; 
+}
+
 header{
     height: 118px;
     text-align: center;
 }
 nav{
-    background: rgba(0, 0,0,0.4);
+    background: rgba(0, 0,0,0.6);
     height: 40px;
     text-align: left;
     padding-top: 16px;
@@ -39,13 +54,14 @@ main{
     text-align: center;
     padding-top: 40px;
     } */
-    h1{
+    .overlay h1{
         font-size: 84px;
         font-family:Arial, Helvetica, sans-serif;
-    color: #ff0101;
-    margin-bottom: 20px;
+        color: #ff0101;
+        margin-bottom: 20px;
     }
-    p{
+
+    .overlay p{
         font-size: 18px;
         color: #fff;
     }
@@ -54,21 +70,23 @@ main{
         font-family: Arial, Helvetica, sans-serif;
         font-size: large;
     }
-    nav a{
+    header nav a{
         text-decoration: none;
         font-size: 25px;
         font: weight 550px;
-            padding: 0 16px; 
+        padding: 0 16px; 
     }
     .maps{
         padding: 100px;
-        
-        margin-top: 700px;
-        
+        margin-top: 720px;
+        margin-left: 300px;
+        justify-content: center;
+        align-items: center;
+
     }
          
 .gallery {
-    margin-top: 450px;
+    margin-top: 720px;
     display: flex;
     flex-wrap: wrap;
     justify-content:left;
@@ -89,7 +107,7 @@ main{
 }
 .gallery img {
     width: 300px;
-height: 200px; 
+    height: 200px; 
     border-radius: 10px;
     transition: transform 0.2s;
 
@@ -97,7 +115,69 @@ height: 200px;
 .gallery-heading a:hover {
     color: rgb(139, 0, 0);
 }
+.overlay p:hover {
+    color: #000080;
+}
 
 .gallery img:hover {
    transform: scale(1.2);
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    font-family: Arial, sans-serif;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-section {
+    flex: 1;
+    padding: 20px;
+    min-width: 250px;
+}
+
+.footer-section h3 {
+    margin-bottom: 15px;
+}
+
+.footer-section p {
+    margin-bottom: 10px;
+}
+
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-section ul li {
+    margin-bottom: 10px;
+}
+
+.footer-section a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.footer-section a:hover {
+    text-decoration: underline;
+}
+
+.social-media {
+    display: flex;
+    gap: 15px;
+}
+
+.footer-bottom {
+    text-align: center;
+    margin-top: 20px;
+    border-top: 1px solid #555;
+    padding-top: 10px;
 }
